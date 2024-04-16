@@ -1,29 +1,22 @@
 package com.Project.SpringAngular.DTO;
 
+public class CustomerSaveDTO {
 
-
-public class CustomerDTO {
-
-	private int customerId;
+	
 	private String customername;
 	private String customeraddress;
 	private int mobile;
-	public CustomerDTO(int customerId, String customername, String customeraddress, int mobile) {
+	public CustomerSaveDTO(int customerId, String customername, String customeraddress, int mobile) {
 		super();
-		this.customerId = customerId;
+		
 		this.customername = customername;
 		this.customeraddress = customeraddress;
 		this.mobile = mobile;
 	}
-	public CustomerDTO() {
+	public CustomerSaveDTO() {
 		
 }
-	public int getCustomerId() {
-		return customerId;
-	}
-	public void setCustomerId(int customerId) {
-		this.customerId = customerId;
-	}
+	
 	public String getCustomername() {
 		return customername;
 	}
@@ -44,12 +37,10 @@ public class CustomerDTO {
 	}
 	@Override
 	public String toString() {
-		return "CustomerDTO [customerId=" + customerId + ", customername=" + customername + ", customeraddress="
-				+ customeraddress + ", mobile=" + mobile + ", getCustomerId()=" + getCustomerId()
-				+ ", getCustomername()=" + getCustomername() + ", getCustomeraddress()=" + getCustomeraddress()
+		return "CustomerDTO [ customername=" + customername + ", customeraddress="
+				+ customeraddress + ", mobile=" + mobile + ", getCustomername()=" + getCustomername() + ", getCustomeraddress()=" + getCustomeraddress()
 				+ ", getMobile()=" + getMobile() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
 				+ ", toString()=" + super.toString() + "]";
 	}
-	
 	
 }
